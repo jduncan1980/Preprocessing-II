@@ -1,0 +1,33 @@
+{
+	"name": "gulp-template",
+	"version": "1.0.0",
+	"description": "gulp template basic",
+	"author": "Jason Duncan",
+	"license": "MIT",
+	"browserslist": [
+		"defaults",
+		"not ie < 11",
+		"last 2 versions",
+		"> 1%",
+		"iOS 7",
+		"last 3 iOS versions"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.6.0",
+		"@babel/preset-env": "^7.6.0",
+		"autoprefixer": "^9.7.6",
+		"browser-sync": "^2.26.7",
+		"cssnano": "^4.1.10",
+		"del": "^5.1.0",
+		"gulp": "^4.0.2",
+		"gulp-babel": "^8.0.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-less": "^4.0.1",
+		"gulp-postcss": "^8.0.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-uglify": "^3.0.2",
+		"node-sass": "^4.13.1"
+	},
+	"dependencies": {}
+}
