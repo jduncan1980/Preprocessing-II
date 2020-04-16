@@ -4,6 +4,7 @@ const browserSync = require('browser-sync').create();
 
 //CSS
 const less = require('gulp-less');
+less.compiler = require('less');
 const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
@@ -88,7 +89,7 @@ function watcher(cb) {
 function server(cb) {
 	browserSync.init({
 		notify: false,
-		open: true,
+		open: false,
 		server: {
 			baseDir: destination,
 		},

@@ -1,22 +1,11 @@
-//SHOW NAVBAR ON SCROLL
+//FADE IN IMAGE
 
-let timer;
+var image = document.querySelector('#destination-image');
 
-$(window).on('scroll', function () {
-	$('nav').addClass('show-navbar');
-	try {
-		clearTimeout(timer);
-	} catch (e) {}
-	timer = setTimeout(function () {
-		$('nav').removeClass('show-navbar');
-	}, 1500);
-});
-
-//TOOLTIPS
-
-$(function () {
-	$(document).tooltip({
-		tooltipClass: 'uitooltip',
-		track: true,
-	});
-});
+window.onscroll = function () {
+	if (window.scrollY > 250) {
+		image.classList.add('showImage');
+	} else {
+		image.classList.remove('showImage');
+	}
+};

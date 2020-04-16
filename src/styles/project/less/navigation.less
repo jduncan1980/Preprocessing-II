@@ -1,1 +1,57 @@
 // Navigation Styles here
+.line {
+	width: 100%;
+	border-bottom: @border-bottom1;
+}
+.navbar {
+	.flex(row, space-between, center);
+	padding: 2.1rem 5%;
+
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+
+	@media @tablet {
+		padding: 2rem 5%;
+	}
+
+	@media @mobile {
+		.flex(column, space-between, center);
+
+		padding: 1.5rem 0 1rem 0;
+	}
+
+	h1 {
+		// margin-left: 14%;
+
+		@media @mobile {
+			margin-left: 0;
+			margin-bottom: 1.5rem;
+			font-size: 3rem;
+		}
+	}
+	ul {
+		.flex(row, space-evenly, center);
+		// margin-right: 14%;
+		width: 50%;
+
+		@media @tablet {
+			width: 50%;
+		}
+
+		@media @mobile {
+			width: 100%;
+		}
+
+		li {
+			margin-right: 2%;
+			a {
+				font-size: 1.6rem;
+				font-family: inherit;
+				font-weight: bold;
+				text-decoration: none;
+				color: black;
+			}
+		}
+	}
+}
