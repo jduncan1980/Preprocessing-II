@@ -1,0 +1,47 @@
+// Mixins in here
+
+.flex(@dir, @justify, @align) {
+	display: flex;
+	flex-direction: @dir;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+.button(@bgColor, @width, @height) {
+	background-color: @bgColor;
+	height: @height;
+	width: @width;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 1.7rem;
+}
+
+.animation(@name, @duration) {
+	@keyframes fadeLeft {
+		0% {
+			opacity: 0;
+			transform: translateX(-70px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	@keyframes fadeRight {
+		0% {
+			opacity: 0;
+			transform: translateX(70px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	animation-name: @name;
+	animation-duration: @duration;
+}
